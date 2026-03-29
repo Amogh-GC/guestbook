@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Guestbook</title>
+    <link rel="stylesheet" href="/styles.css" />
+  </head>
+  <body>
+    <main class="wrap">
+      <header>
+        <h1>Guestbook</h1>
+        <p class="lede">Leave a note. Data is stored in MongoDB.</p>
+      </header>
+
+      <form id="form" class="card">
+        <label>
+          Name
+          <input name="author" required maxlength="80" placeholder="Your name" />
+        </label>
+        <label>
+          Message
+          <textarea name="body" required maxlength="2000" rows="4" placeholder="Say something…"></textarea>
+        </label>
+        <button type="submit">Post</button>
+        <p id="status" class="status" aria-live="polite"></p>
+      </form>
+
+      <section class="card">
+        <h2>Recent messages</h2>
+        <ul id="list" class="list"></ul>
+      </section>
+    </main>
+    <script src="/app.js"></script>
+  </body>
+</html>
