@@ -67,10 +67,3 @@ Or use `minikube ip` and port **30080** (NodePort in `k8s/app-service.yaml`).
 kubectl get pods
 kubectl get svc
 ```
-
-## Assignment checklist
-
-- [ ] Push this repo to a **public GitHub** repository and paste the link in your PDF.
-- [ ] Capture **`git log --oneline`** for your report.
-- [ ] Capture **`kubectl get pods`** when pods are Running.
-- [ ] Screenshot the guestbook in the browser (Compose or Minikube URL).
